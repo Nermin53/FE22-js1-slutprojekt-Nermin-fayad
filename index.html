@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./javascript/java.js">defer</script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="search-form">
+        <label for="search-text">Söktext:</label>
+        <input type="text" id="search-text">
+        <br>
+        <label for="num-photos">Antal foton:</label>
+        <input type="number" id="num-photos" min="1">
+        <br>
+        <label for="size">Storlek på foton:</label>
+        <input type="radio" name="size" value="large"> Stor
+        <input type="radio" name="size" value="medium"> Mellan
+        <input type="radio" name="size" value="small"> Liten
+        <br>
+        <label for="sort">Sortera efter:</label>
+        <select id="sort">
+          <option value="date-posted-asc">Datum (Nyast)</option>
+          <option value="date-posted-desc">Datum (Äldst)</option>
+          <option value="relevance">Relevans</option>
+          <option value="interestingness">Interestingness</option>
+        </select>
+        <br>
+        <button type="submit">Sök</button>
+      </form>
+      
+      <div id="results"></div>
+      
+      
+</body>
+</html>
